@@ -59,7 +59,7 @@ def init_funcs():
                 if i[0] == thistitle:
                     titlefound = True
                     if erase == "D":
-                        i[0] = "erased"
+                        i[0] = "erased
                         print("song deleted\n")
                         begin_entry()
                     catalog.read(thistitle)
@@ -79,7 +79,7 @@ def init_funcs():
             if char == "N":
                 enter_lines()
             elif char == "V":
-                 get_title("V")
+                get_title("V")
 #                print(catalog.songs)
 #                begin_entry()
             elif char == "D":

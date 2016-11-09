@@ -23,9 +23,9 @@ def init_funcs():
     #these are nested methods; flow control begins below
         def enter_lines():
             lines = []
-            print("enter title")
+            print("enter title\n")
             lines.append(input(prompt))
-            print("enter line by line")
+            print("enter line by line\n")
             i = 1
             lines.append(input(prompt))
             while lines[i] != "end":
@@ -46,18 +46,18 @@ def init_funcs():
                 if i[0] == thistitle:
                     titlefound = True
                     if erase == "D":
-                        i = []
-                        print("song deleted")
+                        i[0] = "erased"
+                        print("song deleted\n")
                         begin_entry()
-                    print(catalog.songs)
+                    print(catalog.songs,"\n")
                     #catalog.start_song(count)
                     begin_entry()
             if titlefound == False:
-                print("no matches found for %s" % thistitle)
+                print("no matches found for '%s'\n" % thistitle)
                 begin_entry()
 
         def get_title(toast):
-            print("enter song title")
+            print("enter song title\n")
             searchtitle = input(prompt)
             search_by_title(searchtitle, toast)
 
@@ -81,7 +81,7 @@ def init_funcs():
         if selector == "N" or selector == "V" or selector == "D":
             make_selection(selector)
         else:
-            print("unrecognized character")
+            print("unrecognized character\n")
             begin_entry()
     begin_entry()
 init_funcs()
