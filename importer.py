@@ -1,5 +1,5 @@
-import Package
+import Lunch
 
-Package.winelist
-Package.cheeselist
-Package.fruitlist
+Lunch.winelist()
+Lunch.cheeselist()
+Lunch.fruitlist()
