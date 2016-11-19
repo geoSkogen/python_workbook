@@ -1,13 +1,10 @@
-class Bio(object):
-    def __init__(self, last, first, mi, age):
-        self.last= last
-        self.first = first
-        self.mi = mi
-        self.age = age
+from classes_imported import Bio
 
 miss_piggy = Bio("Piggy", "Miss", "Peepants", 4)
 
+print(miss_piggy.__doc__)
 print(miss_piggy.__dict__)
+
 
 del miss_piggy.age
 
